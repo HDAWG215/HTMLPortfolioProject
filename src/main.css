@@ -1,2 +1,37 @@
 .tagline {
+
+}
+
+.header {
+  width: 100%;
+  border-bottom: 3px solid black;
+  padding: 10px;
+}
+
+body {
+}
+
+p.question {
+  ;
+}
+
+h1 {
+
+  /*color: #FFFFFF;*/
+}
+
+h2 {
+  /*color: #FFFFFF;*/
+}
+
+h3 {
+  /*color: #FFFFFF;*/
+}
+
+ul li {
+  /*color: #FFFFFF;*/
+}
+
+a {
+  /*color: #00FF00*/
 }

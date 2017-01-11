@@ -4,34 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <link rel="stylesheet" href="main.css">
-  <title>HTML Portfolio</title>
+  <script type="text/javascript" src="generateQuestion.js"></script>
+  <title>Maths Questions</title>
 </head>
 <body>
 <div class="header">
-  <h1>Harry Sharp</h1>
-  <h2>Software Quality Engineer</h2>
+  <h1>Maths Questions</h1>
 </div>
 
 <div class="tagline">
-  <h3>Here's some more information about me</h3>
-  <p>This is where I talk about stuff to do with coding</p>
+  <h2>You've come here to attempt some maths questions, very bold.</h2>
 </div>
 
-<div class="skills">
-  <h3>These are my skills:</h3>
-  <ul>
-    <li>HTML</li>
-    <li>Banter</li>
-    <li>Flyin'</li>
-  </ul>
-  <p>I enjoy the wonders of Javascript and HTML</p>
+<div class="question">
+  <h3 id="num1"></h3>
+  <h3 id="operator"></h3>
+  <h3 id="num2"></h3>
+  <button onclick="generateQuestion()">Generate question</button>
+  <p>Question to appear here</p>
 </div>
 
-<div class="contact">
-  <h3>Contact me</h3>
-  <p>Faaaacebook fam. See more details about me here:
-    <a href="https://en.wikipedia.org/wiki/God">Harry Sharp</a>
-  </p>
+<div class="answer">
+  <input title="Answer">Please input your answer in this box
 </div>
 
 </body>
