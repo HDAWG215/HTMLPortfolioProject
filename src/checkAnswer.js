@@ -1,25 +1,23 @@
-
-function checkAnswer() {
-  let answer = document.getElementById("Answer").value.toNumber;
-  let num1 = document.getElementById("num1").innerHTML;
-  let num2 = document.getElementById("num2").innerHTML;
-  let op = document.getElementById("operator").innerHTML;
-  let correctAnswer = function () {
-    if (op == '+') {
-      return (num1 + num2).toNumber;
-    } else if (op == '-') {
-      return (num1 - num2).toNumber;
-    } else if (op == '*') {
-      return (num1 * num2).toNumber;
-    } else if (op == '/') {
-      return (num1 / num2).toNumber;
-    }
-  };
+function checkAnswer(num1, num2, op, answer) {
+  const correctAnswer = getCorrectAnswer(num1, num2, op);
   if (answer == correctAnswer) {
-    alert('Correct! Well done!');
+    return true;
   } else if (answer != correctAnswer) {
-    alert('Try again!');
+    return false;
   } else {
-    document.getElementById("checkAnswer").innerHTML = 'Something went wrong';
+    $("#checkAnswer").innerHTML("Something went wrong!");
+  }
+}
+
+function getCorrectAnswer(num1, num2, op) {
+  switch(op) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    case '/':
+      return num1 / num2;
   }
 }

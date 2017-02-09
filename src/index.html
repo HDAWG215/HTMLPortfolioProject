@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <title>Maths Questions</title>
 </head>
@@ -16,7 +16,7 @@
 </div>
 
 <div class="question">
-  <button id="generateButton" type="button" onclick="generateQuestion()">Generate question</button>
+  <button class="generateButton" type="button">Generate question</button>
   <h3 id="num1"></h3>
   <h3 id="operator"></h3>
   <h3 id="num2"></h3>
@@ -24,17 +24,17 @@
 
 <div class="answer">
   <input id="Answer" type="text" title="Answer">Please input your answer in this box
-  <button id="checkAnswer" type="button" onclick="checkAnswer()">Check Answer!</button>
+  <button id="checkAnswer" type="button">Check Answer!</button>
 </div>
 
-<!--<div class="puppy">-->
-  <!--<img src="_82377877_dogthinkstock.jpg">-->
-<!--</div>-->
+<div class="correctness">
+  <h3 id="correctness"></h3>
+</div>
 
+<script type=text/javascript src="jquery.min.js"></script>
+<script type=text/javascript src="app.js"></script>
 <script src="generateQuestions.js"></script>
 <script src="checkAnswer.js"></script>
-<script src="collectData.js"></script>
-<script src="./../node_modules/jquery/src/jquery.js"></script>
 
 </body>
 </html>
