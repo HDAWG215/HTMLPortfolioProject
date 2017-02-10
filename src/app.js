@@ -1,5 +1,7 @@
 $(document).ready(() => {
   $(".generateButton").on('click', () => {
+    $("#correctness").text("");
+    $("#Answer").val("");
     let question = generateQuestion();
     $("#num1").text(question[0]);
     $("#num2").text(question[1]);

@@ -8,6 +8,7 @@ function generateQuestion() {
 
   if (op === '/') {
     while (number1 % number2 != 0) {
+      console.log('ueirfhie');
       number2 = Math.floor((Math.random() * number1) + 2);
     }
   }
