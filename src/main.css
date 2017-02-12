@@ -9,30 +9,25 @@
 }
 
 body {
-  /*background-color: greenyellow;*/
+  background-color: #FAFAFA;
 }
 
 div.question {
-  /*background-color: blue;*/
+  margin: auto;
+  width: 50%;
 }
 
-h1 {
-  /*background-color: purple;*/
-  /*color: #FFFFFF;*/
+div.answer {
+  margin: auto;
+  width: 50%;
 }
 
-h2 {
-  /*color: #FFFFFF;*/
+div.checkAnswer {
+  margin: auto;
+  width: 50%;
 }
 
-h3 {
-  /*color: #FFFFFF;*/
-}
-
-ul li {
-  /*color: #FFFFFF;*/
-}
-
-a {
-  /*color: #00FF00*/
+div.correctness {
+  margin-left: 25%;
+  width: 50%;
 }

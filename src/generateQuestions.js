@@ -1,15 +1,16 @@
 
 function generateQuestion() {
-  const number1 = Math.floor((Math.random() * 100) + 1);
-  let number2 = Math.floor((Math.random() * number1) + 2);
+  const number1 = Math.floor((Math.random() * 100) + 3);
+
+  let number2 = Math.floor((Math.random() * (number1 - 1)) + 2);
+
   const ops = ['+', '-', '*', '/'];
 
   const op = ops[Math.round(Math.random() * 3)];
 
   if (op === '/') {
     while (number1 % number2 != 0) {
-      console.log('ueirfhie');
-      number2 = Math.floor((Math.random() * number1) + 2);
+      number2 = Math.floor((Math.random() * number1 - 1) + 2);
     }
   }
   return [number1, number2, op];
