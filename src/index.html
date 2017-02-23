@@ -9,32 +9,37 @@
 <body>
 <div class="header">
   <h1>Maths Questions</h1>
-</div>
-
-<div class="tagline">
   <h2>You've come here to attempt some maths questions, very bold.</h2>
 </div>
 
-<div class="question">
-  <button class="generateButton" type="button">Generate question</button>
-  <h3 id="num1"></h3>
-  <h3 id="operator"></h3>
-  <h3 id="num2"></h3>
+<div>
+  <div class="question">
+    <button class="generateButton" type="button">Generate question</button>
+    <p class="num1"></p>
+    <p class="operator"></p>
+    <p class="num2"></p>
+  </div>
+
+  <div class="answer">
+    <input type="number" id="Answer" title="Answer">Please input your answer in this box
+  </div>
+
+  <div class="checkAnswer">
+    <button id="checkAnswer" type="button">Check Answer!</button>
+  </div>
+
+  <div class="happyPuppy">
+    <div class="correctness">
+      <h3 id="hCorrectness"></h3>
+    </div>
+  </div>
 </div>
 
-<div class="answer">
-  <input id="Answer" type="text" title="Answer">Please input your answer in this box
+<div class="sadPuppy">
+  <div class="correctness">
+    <h3 id="sCorrectness"></h3>
+  </div>
 </div>
-
-<div class="checkAnswer">
-  <button id="checkAnswer" type="button">Check Answer!</button>
-</div>
-
-<div class="correctness">
-  <h3 id="correctness"></h3>
-</div>
-
-<div class="puppy"></div>
 
 <script type=text/javascript src="jquery.min.js"></script>
 <script type=text/javascript src="app.js"></script>
