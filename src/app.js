@@ -10,6 +10,12 @@ $(document).ready(() => {
     $(".puppyImage").remove();
   });
 
+  $("#Answer").on('keyup', () => {
+    if (event.keyCode === 13) {
+      $("#checkAnswer").click();
+    }
+  });
+
   $("#checkAnswer").off('click').on('click', () => {
     $(".puppyImage").remove();
     const num1 = parseInt($(".num1").text());
