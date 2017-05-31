@@ -1,7 +1,6 @@
 $(document).ready(() => {
   $(".generateButton").off('click').on('click', () => {
-    $("#hCorrectness").text("");
-    $("#sCorrectness").text("");
+    $("#correctness").text("");
     $("#Answer").val("");
     let question = generateQuestion();
     $(".num1").text(question[0]);
@@ -23,11 +22,11 @@ $(document).ready(() => {
     const op = $(".operator").text();
     const answer = parseInt($("#Answer").val());
     if(checkAnswer(num1, num2, op, answer)) {
-      $("#hCorrectness").text("Correct!");
-      $('<img class="puppyImage" alt="happy image" src="images/happyPuppy.jpg"/>').appendTo('.happyPuppy');
+      $("#correctness").text("Correct!");
+      $('<img class="puppyImage" alt="happy image" src="images/happyPuppy.jpg"/>').appendTo('.puppy');
     } else {
-      $("#sCorrectness").text("Incorrect, try again!");
-      $('<img class="puppyImage" alt="sad image" src="images/sadPuppy.jpg"/>').appendTo('.sadPuppy');
+      $("#correctness").text("Incorrect, try again!");
+      $('<img class="puppyImage" alt="sad image" src="images/sadPuppy.jpg"/>').appendTo('.puppy');
     }
   });
 });

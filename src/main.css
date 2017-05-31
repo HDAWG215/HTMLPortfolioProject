@@ -26,6 +26,14 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  margin-left: 250px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 100px;
+  font-size: 24px;
+}
+
 body {
   background-color: #FAFAFA;
 }
@@ -36,7 +44,8 @@ div.question {
 }
 
 div.question button:hover {
-
+  background-color: aqua;
+  padding-bottom: inherit;
 }
 
 div.answer {
@@ -50,14 +59,17 @@ div.checkAnswer {
 }
 
 div.checkAnswer button:hover {
-  background-color: #96CC71;
-  font-size: 12px;
+  background-color: aqua;
+  padding-bottom: inherit;
 }
 
-div.happyPuppy {
-  margin-left: 25%;
-  width: 50%;
-  float: right;
+img.puppyImage {
+  margin-left: 250px;
+  width:  500px;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
 }
 
 p {
